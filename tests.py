@@ -80,7 +80,7 @@ def test_open_cell():
     field.generate(9,9,20)    
     pg.mouse.set_pos((1,1+UPINDENT))
     field.open()
-    assert pg.mouse.get_pos == (1,1+UPINDENT)
+    assert pg.mouse.get_pos() == (1,1+UPINDENT)
     assert field.cell_storage[0][0].opened == True
 #13
 def test_open_all():
