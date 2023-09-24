@@ -4,29 +4,36 @@ import pygame as pg
 from constants import *
 import time
 pg.init()
+#1
 def test_highlight_closed():
     cell = Cell(4,2,True,4)
     assert cell.highlight(1) == 1
     assert cell.highlight(-1) == -1
+#2
 def test_highlight_closed_marked():
     cell = Cell(4,2,True,4)
     cell.changemark()
     assert cell.highlight(1) == 0
+#3
 def test_highlight_opened():
     cell = Cell(4,2,False,4)
     cell.open()
     assert cell.highlight(1) == 0
+#4
 def test_open_closed_mined():
     cell = Cell(1,1,True,4)
     assert cell.open() == -1
-def test_open_closed_not_mined():
+#5
+    def test_open_closed_not_mined():
     cell = Cell(1,1,False,4)
     assert cell.open() == 1
-def test_open_opend_cell():
+#6
+    def test_open_opend_cell():
     cell = Cell(1,1,False,4)
     cell.open()
     assert cell.open() == -2
-def test_open_marked():
+#7
+    def test_open_marked():
     cell = Cell(1,1,False,4)
     cell.changemark()
     assert cell.open() == -3
@@ -73,6 +80,7 @@ def test_open_cell():
     field.generate(9,9,20)    
     pg.mouse.set_pos((1,1+UPINDENT))
     field.open()
+    assert pg.mouse.get_pos((1,1+UPINDENT))
     assert field.cell_storage[0][0].opened == True
 #13
 def test_open_all():
