@@ -24,16 +24,16 @@ def test_open_closed_mined():
     cell = Cell(1,1,True,4)
     assert cell.open() == -1
 #5
-    def test_open_closed_not_mined():
+def test_open_closed_not_mined():
     cell = Cell(1,1,False,4)
     assert cell.open() == 1
 #6
-    def test_open_opend_cell():
+def test_open_opend_cell():
     cell = Cell(1,1,False,4)
     cell.open()
     assert cell.open() == -2
 #7
-    def test_open_marked():
+def test_open_marked():
     cell = Cell(1,1,False,4)
     cell.changemark()
     assert cell.open() == -3
