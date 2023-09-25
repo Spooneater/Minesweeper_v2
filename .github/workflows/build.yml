@@ -31,14 +31,12 @@ jobs:
       - name: install requirements
         run: |
           pip install --upgrade pip
-          pip install flake8
           pip install pygame
           pip install pytest
           pip install coveralls
-          pip install pytest-cov
-      - name: Test with pytest
+      - name: run tests
         run: |
-          pytest --cov=./
-      - name: Upload coverage data to coveralls.io
-        run: |
-          coveralls --service=github
+          python3 -m pytest test.py
+          python3 -m coverage run test.py
+          python3 -m coverage report -m
+          ${{ secrets.COVERALLS_REPO_TOKEN }} coveralls
