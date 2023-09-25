@@ -35,9 +35,9 @@ jobs:
           pip install pygame
           pip install pytest
           pip install coveralls
-      - name: run tests
+      - name: Test with pytest
         run: |
-          python3 -m pytest tests.py
-          python3 -m coverage run tests.py
-          python3 -m coverage report -m
-          ${{ secrets.COVERALLS_REPO_TOKEN }} 
+          pytest --cov=./
+      - name: Upload coverage data to coveralls.io
+        run: |
+          coveralls --service=github
