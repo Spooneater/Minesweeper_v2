@@ -37,6 +37,6 @@ jobs:
       - name: run tests
         run: |
           python3 -m pytest tests.py
-          python3 -m coverage run --branch tests.py
+          python3 -m coverage run tests.py
           python3 -m coverage report -m
           ${{ secrets.COVERALLS_REPO_TOKEN }} coveralls
