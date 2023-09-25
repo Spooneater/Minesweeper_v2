@@ -35,6 +35,7 @@ jobs:
           pip install pygame
           pip install pytest
           pip install coveralls
+          pip install pytest-cov
       - name: Test with pytest
         run: |
           pytest --cov=./
