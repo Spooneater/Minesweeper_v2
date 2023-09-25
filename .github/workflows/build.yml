@@ -31,6 +31,7 @@ jobs:
       - name: install requirements
         run: |
           pip install --upgrade pip
+          pip install flake8
           pip install pygame
           pip install pytest
           pip install coveralls
