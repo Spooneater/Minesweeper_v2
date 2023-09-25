@@ -1,4 +1,4 @@
-[![CI/CD GitHub Actions](https://github.com/Spooneater/Minesweeper_v2/actions/workflows/python-app.yml/badge.svg)](https://github.com/Spooneater/Ractions/workflows/test-action.yml)
+[![CI/CD GitHub Actions](https://github.com/Spooneater/Minesweeper_v2/actions/workflows/python-app.yml/badge.svg)](https://github.com/Spooneater/Ractions/workflows/python-app.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
