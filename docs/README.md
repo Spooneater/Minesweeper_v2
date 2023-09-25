@@ -1,4 +1,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Spooneater_Minesweeper_v2&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Spooneater_Minesweeper_v2)
 # Игра "Сапер"
 
 ## Тематика программного проект
